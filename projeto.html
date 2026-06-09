@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JotaPe Marketing | Planos e Serviços</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        jp: {
+                            azul: '#165DFF',
+                            preto: '#050505',
+                            branco: '#FFFFFF',
+                            cinza: '#121212',
+                            cinzaClaro: '#1E1E1E',
+                        },
+                        fontFamily: {
+                            sans: ['Inter', 'sans-serif'],
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 0 0 30px rgba(22, 93, 255, 0.5);
+            }
+            .card-gradient {
+                background: linear-gradient(145deg, #121212, #050505);
+            }
+            .circle-pattern {
+                background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg stroke='%23165DFF' stroke-width='1' stroke-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='25'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            }
+            .btn-purchase {
+                @apply w-full mt-6 py-3 rounded-lg transition-all duration-300 ease-in-out font-semibold hover:shadow-lg hover:shadow-jp-azul/30 hover:-translate-y-1;
+            }
+            .card-hover {
+                @apply transition-all duration-300 ease-in-out hover:border-jp-azul/70 hover:shadow-[0_8px_32px_rgba(22,93,255,0.15)] hover:-translate-y-2;
+            }
+            .fade-in {
+                opacity: 0;
+                transform: translateY(20px);
+                transition: all 0.6s ease-out;
+            }
+            .fade-in.visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-jp-preto text-jp-branco circle-pattern min-h-screen">
+
+    <!-- Header -->
+    <header class="container mx-auto px-4 py-12 text-center">
+        <div class="flex justify-center items-center gap-4 mb-6">
+            <div class="w-14 h-14 rounded-full border-2 border-jp-azul flex items-center justify-center shadow-[0_0_20px_rgba(22,93,255,0.2)]">
+                <div class="w-9 h-9 rounded-full border border-jp-branco/60"></div>
+            </div>
+            <h1 class="text-5xl md:text-6xl font-bold text-jp-azul text-shadow">JotaPe Marketing</h1>
+        </div>
+        <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            Estratégia • Criatividade • Resultados<br>
+            <span class="text-jp-azul font-medium">Igarassu - PE</span>
+        </p>
+        <p class="text-base text-gray-400 mt-3">Instagram: <a href="https://instagram.com/jp.marketing.oficial" target="_blank" class="text-jp-azul hover:underline">@jp.marketing.oficial</a></p>
+    </header>
+
+    <!-- Sobre Nós -->
+    <section class="container mx-auto px-4 py-10 fade-in">
+        <div class="bg-jp-cinza/80 backdrop-blur-sm p-8 md:p-10 rounded-2xl border border-jp-azul/20 shadow-2xl">
+            <h2 class="text-3xl font-bold mb-6 text-center text-jp-azul">Sobre Nós</h2>
+            <p class="text-gray-300 text-center max-w-4xl mx-auto leading-relaxed text-lg">
+                Somos a JotaPe Marketing, uma agência focada em trazer crescimento real e sustentável para o seu negócio. Nosso símbolo, o Círculo da Atenção Plena, representa nosso foco total na sua marca. Trabalhamos com profissionalismo, clareza e estratégia para transformar ideias em resultados concretos e vendas.
+            </p>
+        </div>
+    </section>
+
+    <!-- Planos Mensais -->
+    <section class="container mx-auto px-4 py-12" id="planos">
+        <h2 class="text-4xl font-bold text-center mb-16 text-jp-azul fade-in">Planos Mensais</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- Plano Iniciante -->
+            <div class="card-gradient rounded-2xl p-7 border border-gray-800 card-hover fade-in">
+                <div class="text-center">
+                    <span class="bg-gray-700 text-sm px-4 py-1.5 rounded-full mb-5 inline-block font-medium">Iniciante</span>
+                    <h3 class="text-2xl font-bold mb-2">Presença Digital</h3>
+                    <div class="my-5">
+                        <span class="text-4xl font-bold text-jp-branco">R$149,90</span>
+                        <span class="text-gray-400">/mês</span>
+                    </div>
+                </div>
+                <ul class="space-y-4 my-7 text-left">
+                    <li class="flex items-center gap-3"><i class="fa fa-check text-jp-azul text-lg"></i> Gestão de 1 Rede Social</li>
+                    <li class="flex items-center gap-3"><i class="fa fa-check text-jp-azul text-lg"></i> 3 Postagens por Semana</li>
+                    <li class="flex items-center gap-3"><i class="fa fa-check text-jp-azul text-lg"></i> Criação de Artes</li>
+                    <li class="flex items-center gap-3"><i class="fa fa-check text-jp-azul text-lg"></i> Legendas Otimizadas</li>
+                    <li class="flex items-center gap-3"><i class="fa fa-check text-jp-azul text-lg"></i> Relatório Mensal</li>
+                </ul>
+                <a href="https://wa.me/5581996572994?text=Ol%C3%A1!%20Quero%20CONTRATAR%20o%20Plano%20Iniciante%20(R%24149%2C90)%20da%20JotaPe%20Marketing." target="_blank">
+                    <button class="btn-purchase bg-gray-700 hover:bg-jp-azul text-jp-branco">
+                        <i class="fa fa-whatsapp mr-2"></i> Contratar Agora
+                    </button>
+                </a>
+            </div>
+
+            <!-- Plano Crescimento -->
+            <div class="card-gradient rounded-2xl p-7 border-2 border-jp-azul shadow-2xl relative card-hover fade-in">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-jp-azul px-5 py-1.5 rounded-full text-sm font-semibold shadow-lg">🔥 Mais Popular</div>
+                <div class="text-center">
+                    <span class="bg-jp-azul/20 text-sm px-4 py-1.5 rounded-full mb-5 inline-block font-medium">Crescimento</span>
+                    <h3 class="text-2xl font-bold mb-2">Engajamento Total</h3>
+                    <div class="my-5">
+                        <span class="text-4xl font-bold text-jp-branco">R$249,90</span>
+                        <span class="text-gray-400">/mês</span>
+                    </div>
+                </div>
+                <ul class="space-y-4 my-7 text-left">
+                    <li class="flex items-center gap-3"><i class="fa fa-check text-jp-azul text-lg"></i> Gestão de 2 Redes Sociais</li>
+                    <li class="flex items-center gap-3"><i class="fa fa-check text-jp-azul text-lg"></i> 5 Postagens + Stories Diários</li>
+                    <li class="flex items-center gap-3"><i class="fa fa-check text-jp-azul text-lg"></i> Planejamento Mensal</li>
+                    <li class="flex items-center gap-3"><i class="fa fa-check text-jp-azul text-lg"></i> Análise de Concorrentes</li>
+                    <li class="flex items-center gap-3"><i class="fa fa-check text-jp-azul text-lg"></i> Atendimento Prioritário</li>
+                </ul>
+                <a href="https://wa.me/5581996572994?text=Ol%C3%A1!%20Quero%20CONTRATAR%20o%20Plano%20Crescimento%20(R%24249%2C90)%20da%20JotaPe%20Marketing." target="_blank">
+                    <button class="btn-purchase bg-jp-azul hover:bg-jp-azul/90 text-white">
+                        <i class="fa fa-whatsapp mr-2"></i> Contratar Agora
+                    </button>
+                </a>
+            </div>
+
+            <!-- Plano Avançado -->
+            <div class="card-gradient rounded-2xl p-7 border border-gray-800 card-hover fade-in">
+                <div class="text-center">
+                    <span class="bg-gray-700 text-sm px-4 py-1.5 rounded-full mb-5 inline-block font-medium">Avançado</span>
+                    <h3 class="text-2xl font-bold mb-2">Domínio de Mercado</h3>
+                    <div class="my-5">
+                        <span class="text-4xl font-bold text-jp-branco">R$399,90</span>
+                        <span class="text-gray-400">/mês</span>
+                    </div>
+                </div>
+                <ul class="space-y-4 my-7 text-left">
+                    <li class="flex items-center gap-3"><i class="fa fa-check text-jp-azul text-lg"></i> Gestão 3 Redes (Insta/Face/TikTok)</li>
+                    <li class="flex items-center gap-3"><i class="fa fa-check text-jp-azul text-lg"></i> Criação de Vídeos (Reels/TikTok)</li>
+                    <li class="flex items-center gap-3"><i class="fa fa-check text-jp-azul text-lg"></i> Gestão de Tráfego Pago</li>
+                    <li class="flex items-center gap-3"><i class="fa fa-check text-jp-azul text-lg"></i> Reunião Mensal Estratégica</li>
+                    <li class="flex items-center gap-3"><i class="fa fa-check text-jp-azul text-lg"></i> Relatórios de ROI Completos</li>
+                </ul>
+                <a href="https://wa.me/5581996572994?text=Ol%C3%A1!%20Quero%20CONTRATAR%20o%20Plano%20Avan%C3%A7ado%20(R%24399%2C90)%20da%20JotaPe%20Marketing." target="_blank">
+                    <button class="btn-purchase bg-gray-700 hover:bg-jp-azul text-jp-branco">
+                        <i class="fa fa-whatsapp mr-2"></i> Contratar Agora
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços Avulsos -->
+    <section class="container mx-auto px-4 py-12">
+        <h2 class="text-4xl font-bold text-center mb-16 text-jp-azul fade-in">Serviços Avulsos</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7">
+            
+            <div class="bg-jp-cinza/70 p-7 rounded-xl border border-gray-800 card-hover fade-in text-center">
+                <i class="fa fa-pencil text-jp-azul text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2">Identidade Visual</h3>
+                <p class="text-gray-400 text-sm mb-5 leading-relaxed">Criação de logotipo, paleta de cores e manual de marca completo</p>
+                <p class="text-2xl font-bold text-jp-azul">R$ 120,00</p>
+                <a href="https://wa.me/5581996572994?text=Ol%C3%A1!%20Quero%20comprar%20Identidade%20Visual%20(R%24120%2C00)." target="_blank">
+                    <button class="mt-5 px-7 py-2.5 rounded-lg bg-jp-azul/20 hover:bg-jp-azul/70 transition-all duration-300 text-sm font-semibold w-full">
+                        <i class="fa fa-shopping-cart mr-2"></i> Contratar
+                    </button>
+                </a>
+            </div>
+
+            <div class="bg-jp-cinza/70 p-7 rounded-xl border border-gray-800 card-hover fade-in text-center">
+                <i class="fa fa-video-camera text-jp-azul text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2">Criação de Vídeos</h3>
+                <p class="text-gray-400 text-sm mb-5 leading-relaxed">Edição e produção de vídeos curtos para redes sociais (Reels, TikTok e Shorts)</p>
+                <p class="text-2xl font-bold text-jp-azul">R$ 90,00</p>
+                <a href="https://wa.me/5581996572994?text=Ol%C3%A1!%20Quero%20comprar%20Cria%C3%A7%C3%A3o%20de%20V%C3%ADdeos%20(R%2490%2C00)." target="_blank">
+                    <button class="mt-5 px-7 py-2.5 rounded-lg bg-jp-azul/20 hover:bg-jp-azul/70 transition-all duration-300 text-sm font-semibold w-full">
+                        <i class="fa fa-shopping-cart mr-2"></i> Contratar
+                    </button>
+                </a>
+            </div>
+
+            <div class="bg-jp-cinza/70 p-7 rounded-xl border border-gray-800 card-hover fade-in text-center">
+                <i class="fa fa-file-image-o text-jp-azul text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2">Pacote de Artes</h3>
+                <p class="text-gray-400 text-sm mb-5 leading-relaxed">10 peças gráficas personalizadas prontas para postar nas suas redes</p>
+                <p class="text-2xl font-bold text-jp-azul">R$ 80,00</p>
+                <a href="https://wa.me/5581996572994?text=Ol%C3%A1!%20Quero%20comprar%20Pacote%20de%20Artes%20(R%2480%2C00)." target="_blank">
+                    <button class="mt-5 px-7 py-2.5 rounded-lg bg-jp-azul/20 hover:bg-jp-azul/70 transition-all duration-300 text-sm font-semibold w-full">
+                        <i class="fa fa-shopping-cart mr-2"></i> Contratar
+                    </button>
+                </a>
+            </div>
+
+            <div class="bg-jp-cinza/70 p-7 rounded-xl border border-gray-800 card-hover fade-in text-center">
+                <i class="fa fa-comments text-jp-azul text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2">Consultoria</h3>
+                <p class="text-gray-400 text-sm mb-5 leading-relaxed">Análise estratégica do seu negócio e orientação para crescer no digital</p>
+                <p class="text-2xl font-bold text-jp-azul">R$ 90,00</p>
+                <a href="https://wa.me/5581996572994?text=Ol%C3%A1!%20Quero%20agendar%20Consultoria%20Estrat%C3%A9gica%20(R%2490%2C00)." target="_blank">
+                    <button class="mt-5 px-7 py-2.5 rounded-lg bg-jp-azul/20 hover:bg-jp-azul/70 transition-all duration-300 text-sm font-semibold w-full">
+                        <i class="fa fa-shopping-cart mr-2"></i> Contratar
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <footer class="bg-jp-cinza mt-20 py-12 border-t border-jp-azul/10">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-3xl font-bold mb-4 text-jp-azul">Vamos Crescer Juntos?</h3>
+            <p class="mb-8 text-gray-300 max-w-2xl mx-auto text-lg">Entre em contato e solicite um orçamento sem compromisso para alavancar o seu negócio</p>
+            <div class="flex justify-center gap-5 flex-wrap">
+                <a href="https://wa.me/5581996572994?text=Ol%C3%A1!%20Cheguei%20pelo%20site%20da%20JotaPe%20Marketing!" target="_blank" class="bg-jp-azul px-9 py-4 rounded-lg hover:bg-jp-azul/90 transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-jp-azul/30 flex items-center gap-2">
+                    <i class="fa fa-whatsapp"></i> Fale Conosco
+                </a>
+                <a href="https://instagram.com/jp.marketing.oficial" target="_blank" class="border border-jp-azul px-7 py-4 rounded-lg hover:bg-jp-azul/10 transition-all duration-300 flex items-center gap-2">
+                    <i class="fa fa-instagram"></i> @jp.marketing.oficial
+                </a>
+            </div>
+            <p class="mt-10 text-gray-500 text-sm">© 2026 JotaPe Marketing - Todos os direitos reservados.<br>Atendimento: (81) 99657-2994 | Instagram: @jp.marketing.oficial</p>
+        </div>
+    </footer>
+
+    <script>
+        // Animação ao rolar a página
+        document.addEventListener('DOMContentLoaded', () => {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            fadeElements.forEach(el => observer.observe(el));
+
+            // Efeito de hover nos cards
+            const cards = document.querySelectorAll('.card-gradient, .bg-jp-cinza\\/70');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', () => {
+                    card.classList.add('shadow-[0_0_30px_rgba(22,93,255,0.2)]');
+                });
+                card.addEventListener('mouseleave', () => {
+                    card.classList.remove('shadow-[0_0_30px_rgba(22,93,255,0.2)]');
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
